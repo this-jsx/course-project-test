@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap');
+
 * {
     box-sizing: border-box;
 }
@@ -6,6 +8,7 @@ body {
     margin: 0;
     padding: 0;
     background-color: #ccc;
+    font-family: 'Opes Sans', sans-serif;
 }
 
 ul {
@@ -23,11 +26,11 @@ a {
 }
 
 
-.header-container {
-    /* position: relative; */
+/* .header-container {
+    position: relative;
     display: flex;
     flex-direction: column;
-}
+} */
 
 .header-top {
     display: flex;
@@ -52,6 +55,13 @@ a {
     height: 40px;
 }
 
+.nav__top-login {
+    padding-left: 1.3em;
+    background-image: url('../img/1920/vector.svg');
+    background-repeat: no-repeat;
+    background-position: left center;
+}
+
 .header-bottom {
     /* position: absolute; */
     top: 4em;
@@ -71,12 +81,38 @@ a {
 }
 
 .nav__bottom-item {
+    padding-right: 1em;
     margin-right: 111px;
+    background-image: url('../img/1920/down-white.svg');
+    background-repeat: no-repeat;
+    background-position: right 65%;
 }
 
 .input {
+    position: relative;
+    padding: 1em 0;
+    padding-left: 2em;
     background-color: transparent;
     border: none;
+    background-image: url('../img/1920/loop.svg');
+    background-repeat: no-repeat;
+    background-position: left center;
+}
+
+
+.header__bottom-form {
+    position: relative;
+    margin-right: 4em;
+}
+
+.header__bottom-form::after {
+    position: absolute;
+    content: '';
+    width: 218px;
+    background-color: #fff;
+    height: 1px;
+    left: 27px;
+    top: 32px;
 }
 
 .input::placeholder {
@@ -84,9 +120,47 @@ a {
     font-size: 18px;
 }
 
+.top-container, .bottom-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+}
+
+
+/* hero */
 
 .hero {
     height: 800px;
     background-image: url('../img/1920/header-1.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
     /* background-color: #aaa625; */
+}
+
+.hero-wrapper {
+    width: 700px;
+    font-weight: 700;
+    color: #fff;
+    padding: 63px 0 122px 155px;
+}
+
+.hero__title {
+    margin: 0;
+    font-size: 72px;
+    line-height: 82.8px;
+}
+
+.hero__desc {
+    font-size: 18px;
+    line-height: 30px;
+}
+
+.hero__link {
+    display: block;
+    width: 314px;
+    margin-top: 92px;
+    padding: 22.5px 35px;
+    background-color: #9D5CD0;
+    border-radius: 100px;
 }
